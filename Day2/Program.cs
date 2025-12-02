@@ -44,6 +44,7 @@ static void Part2(string[] ranges)
         if (allMatch)
         {
           answer += number;
+          break;
         }
       }
     }
