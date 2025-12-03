@@ -1,6 +1,7 @@
 ﻿var input = File.ReadAllLines("input.txt");
 
-Part1(input);
+//Part1(input);
+Part2(input);
 
 static void Part1(string[] input)
 {
@@ -17,6 +18,28 @@ static void Part1(string[] input)
             throw new Exception("Ahhhhhhhhhhhhhhhhhhhhhh");
 
         answer += int.Parse($"{highestNumberData.value}{nextHighestNumberData.value}");
+    }
+
+    Console.WriteLine(answer);
+}
+
+static void Part2(string[] input)
+{
+    long answer = 0;
+
+    foreach (var bank in input)
+    {
+        var ar = bank.ToCharArray().ToList().Select(x => int.Parse(x.ToString()));
+        var numberParts = new List<(int index, int value)>();
+
+        numberParts.Add(ReturnHighestNumber(ar, 0, (ar.Count() - 11)));
+
+        for (int i = 0; i < 11; i++)
+        {
+            numberParts.Add(ReturnHighestNumber(ar, (numberParts.Last().index + 1), (ar.Count() - (numberParts.Last().index + 1)) - (11 - numberParts.Count())));
+        }
+
+        answer += long.Parse(String.Join("",numberParts.Select(x => x.value.ToString()))); 
     }
 
     Console.WriteLine(answer);
