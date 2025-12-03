@@ -1,5 +1,14 @@
 <Solution>
   <Project Path="Day1/Day1.csproj" />
+  <Project Path="Day10/Day10.csproj" Id="ae5ef286-00e8-4766-a6b4-419991ab9a3d" />
+  <Project Path="Day11/Day11.csproj" Id="6f36386f-6eb2-47c8-98fa-44d9f8175f34" />
+  <Project Path="Day12/Day12.csproj" Id="a71b55f4-fbc6-4651-9636-c2cca26bd606" />
   <Project Path="Day2/Day2.csproj" Id="7ccf2f30-1c21-4b95-9ef5-0dc465f1e810" />
   <Project Path="Day3/Day3.csproj" Id="c0562ba0-9876-4910-885b-e099f56f73e6" />
+  <Project Path="Day4/Day4.csproj" Id="c798b99e-9824-4d5c-8f3f-7a051a1f5180" />
+  <Project Path="Day5/Day5.csproj" Id="243cde8a-c327-4013-bfdb-016b5f5891b4" />
+  <Project Path="Day6/Day6.csproj" Id="d02e3f86-a959-42f1-8fc5-e1628aac5509" />
+  <Project Path="Day7/Day7.csproj" Id="d68da7f9-544f-4b11-928a-c9304777ab0d" />
+  <Project Path="Day8/Day8.csproj" Id="44c31678-6a3e-4807-be57-09d1715f6e55" />
+  <Project Path="Day9/Day9.csproj" Id="bd8d1538-cd2f-40af-aa70-4d22b640cec3" />
 </Solution>
